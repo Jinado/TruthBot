@@ -1,0 +1,19 @@
+{
+  "name": "truthbot",
+  "version": "1.0.0",
+  "description": "I'm a student at a University in Sweden and I'm, at the time of writing, studying an introductory course\r to University-level math. My teacher has been quoted to say:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jinado/TruthBot.git"
+  },
+  "author": "Johannes Emmoth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jinado/TruthBot/issues"
+  },
+  "homepage": "https://github.com/Jinado/TruthBot#readme"
+}

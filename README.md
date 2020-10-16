@@ -19,5 +19,5 @@ Commands:
 !TruthBot help
 !TruthBot give us the truth!
 !TruthBot gt
-!TruthBot add "<SOME MESSAGE>"
+!TruthBot add "<SOME MESSAGE> // Only Jinado and Flax can use this"
 ```

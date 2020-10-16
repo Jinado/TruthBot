@@ -19,4 +19,5 @@ Commands:
 !TruthBot help
 !TruthBot give us the truth!
 !TruthBot gt
+!TruthBot add "<SOME MESSAGE>"
 ```

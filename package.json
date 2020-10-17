@@ -17,8 +17,10 @@
   },
   "homepage": "https://github.com/Jinado/TruthBot#readme",
   "dependencies": {
+    "@types/node": "^14.11.10",
     "discord.js": "^12.3.1",
     "dotenv": "^8.2.0",
-    "fs": "0.0.1-security"
+    "fs": "0.0.1-security",
+    "ts": "^0.2.2"
   }
 }

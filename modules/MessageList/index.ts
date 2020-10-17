@@ -61,7 +61,7 @@ class MessageList {
         // Create a new dataset
         const _oldPage = this.currentPage - 1;
         let _reversedTempMsgs: Array<string> = [];
-        for(let i = (this.messages.length - 1); i > (_oldPage * 10); i--){
+        for(let i = (this.messages.length - 1); i >= (_oldPage * 10); i--){
             _reversedTempMsgs.push(this.messages[i]);
         }
 

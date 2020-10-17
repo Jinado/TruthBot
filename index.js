@@ -192,7 +192,7 @@ async function getMessagesFromDatabase(){
  * @returns {Promise<string>} a message from the file
  */
 async function fetchMessage(){
-    messages = getMessagesFromDatabase();  
+    messages = await getMessagesFromDatabase();  
     return messages[Math.floor(Math.random() * messages.length)];
 }
 

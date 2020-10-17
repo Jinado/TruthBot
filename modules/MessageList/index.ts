@@ -47,7 +47,8 @@ class MessageList {
         let _embed = new Discord.MessageEmbed()
                     .setColor(this.orange)
                     .setTitle("Messages")
-                    .setDescription(_desc);
+                    .setDescription(_desc)
+                    .setFooter("Created by Johannes Emmoth @ [jinado.se](http://jinado.se)")
         _embed.type = "rich";
 
         return _embed;

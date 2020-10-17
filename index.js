@@ -6,6 +6,7 @@ const Client = new Discord.Client();
 const MessageList = require("./modules/MessageList").default;
 
 // Important constants
+const orange = 0xFFA500;
 const prefix = "!truthbot";
 const rewind = '⏪'
 const back = '◀️';
@@ -75,7 +76,30 @@ Client.on("message", async msg => {
 
         // Listen for commands
         if(msg.content.toLowerCase().endsWith("help") || msg.content.endsWith("?")){
-            await msg.channel.send("help, ?    :Displays this help dialog\nGive us the truth!, gt    :Tells the truth\nadd <SOME MESSAGE>    :Adds a message to the list of messages");
+            let helpEmbed = new Discord.MessageEmbed()
+                            .setTitle("Help")
+                            .setColor(orange)
+                            .addFields(
+                                {
+                                    name: "help, ?",
+                                    value: "Displays this help message"
+                                },
+                                {
+                                    name: "Give us the truth!, gt",
+                                    value: "Tells the truth"
+                                },
+                                {
+                                    name: "list",
+                                    value: "Lists all currently available messages"
+                                },
+                                {
+                                    name: "add <message>",
+                                    value: "Adds the specified message to the bot. Usuable only by Jinado and Flax"
+                                },
+                            )
+                            .setFooter("Created by Johannes Emmoth @ [jinado.se](http://jinado.se)");
+            helpEmbed.type = "rich";
+            await msg.channel.send(helpEmbed);
             return;
         } else if (msg.content.toLowerCase() === "!truthbot give us the truth!" || msg.content.toLowerCase().endsWith("gt")){
             const message = await fetchMessage();

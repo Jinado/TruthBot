@@ -97,7 +97,7 @@ Client.on("message", async msg => {
                                     value: "Adds the specified message to the bot. Usuable only by Jinado and Flax"
                                 },
                             )
-                            .setFooter("Created by Johannes Emmoth @ [jinado.se](http://jinado.se)");
+                            .setFooter("Created by Johannes Emmoth @ http://jinado.se");
             helpEmbed.type = "rich";
             await msg.channel.send(helpEmbed);
             return;

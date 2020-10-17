@@ -48,7 +48,7 @@ class MessageList {
                     .setColor(this.orange)
                     .setTitle("Messages")
                     .setDescription(_desc)
-                    .setFooter("Created by Johannes Emmoth @ [jinado.se](http://jinado.se)")
+                    .setFooter("Created by Johannes Emmoth @ http://jinado.se")
         _embed.type = "rich";
 
         return _embed;

@@ -53,7 +53,7 @@ Client.on("message", async msg => {
 
     // Reply with a mean message about Vilshärad if Grimpan wrote something
     if(msg.author.id === process.env.TRUTHBOT_GRIMPAN_ID){
-        if(msg.content.toLowerCase().match(/(v+.?i+.?l+.?s+.?h+.?ä+.?r+.?((a+.?)|(s+.?))d+)/g))
+        if(msg.content.toLowerCase().match(/(v+.{0,4}i+.{0,4}l+.{0,4}s+.{0,4}h+.{0,4}ä+.{0,4}r+.{0,4}((a+.{0,4})|(s+.{0,4}))d+)/g))
         {
             const message = await fetchMessage();
             await msg.reply(message);

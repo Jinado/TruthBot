@@ -54,7 +54,7 @@ Client.on("message", async msg => {
     // Reply with a mean message about Vilshärad if Grimpan wrote something
     if(msg.author.id === process.env.TRUTHBOT_GRIMPAN_ID){
         forbiddenWord = /((v)\2*)(.?)\3*((i)\5*)(.?)\6*((l)\8*)(.?)\9*((s)\11*)(.?)\12*((h)\14*)(.?)\15*((ä)\17*)(.?)\18*((r)\20*)(.?)\21*((a)\23*|(s)\23*)(.?)\24*((d)\26*)/g;
-        if(msg.content.toLowerCase().match(forbiddenWord)
+        if(msg.content.toLowerCase().match(forbiddenWord))
         {
             const message = await fetchMessage();
             await msg.reply(message);
